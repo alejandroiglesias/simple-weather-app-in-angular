@@ -1,4 +1,4 @@
-class SearchCityController {
+class WeatherController {
 
   /** @ngInject */
   constructor($http, weatherService) {

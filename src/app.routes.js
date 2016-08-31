@@ -5,11 +5,11 @@ angular
 /** @ngInject */
 function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   $locationProvider.html5Mode(true).hashPrefix('!');
-  $urlRouterProvider.otherwise('/search');
+  $urlRouterProvider.otherwise('/weather');
 
   $stateProvider
     .state('app', {
-      url: '/search',
-      //component: 'app'
+      url: '/weather',
+      component: 'weather'
     });
 }

@@ -28,6 +28,5 @@ class weatherService {
 }
 
 angular
-  .module('app')
-  .constant('openWeatherMapAppId', 'ed0cf75d34cbe0236f9e94985a91fea2')
+  .module('weather')
   .service('weatherService', weatherService);
