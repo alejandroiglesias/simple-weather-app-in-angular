@@ -2,7 +2,7 @@
 
 ## Getting started
 
-This project uses [Node|https://nodejs.org/] and [Gulp|http://gulpjs.com/] to build the project and
+This project uses [Node](https://nodejs.org/) and [Gulp](http://gulpjs.com/) to build the project and
 run development tasks. Make sure you have Node installed first. Then, clone this repository, `cd`
 into the directory where you cloned it and install the dependencies:
 
