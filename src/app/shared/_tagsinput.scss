@@ -6,18 +6,18 @@
   .tags {
     background-color: $tags-input-bg;
     border: $tags-input-border;
-    box-shadow: none;
+    box-shadow: $tags-input-box-shadow;
 
     &.focused {
-      box-shadow: none;
+      box-shadow: $tags-input-box-shadow-focus;
     }
 
     .input {
       background-color: transparent;
       color: $tags-input-color;
       font-family: $font-family-roboto;
-      font-size: 12px;
-      font-weight: 100;
+      font-size: $tags-input-font-size;
+      font-weight: $tags-input-font-weight;
       height: $tag-item-height;
       margin: 3px;
     }
@@ -27,13 +27,14 @@
       margin: 3px;
       background: $tag-item-bg;
       color: $tag-item-color;
-      border: none;
+      border: $tag-item-border;
+      border-radius: $border-radius;
       font-family: $font-family-roboto;
-      font-size: 12px;
-      font-weight: 100;
+      font-size: $tags-input-font-size;
+      font-weight: $tags-input-font-weight;
       height: $tag-item-height;
       line-height: $tag-item-height;
-      box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, .3);
+      box-shadow: $tag-item-box-shadow;
 
 
       &.selected {
@@ -45,8 +46,7 @@
         top: -2px;
         color: $tag-item-remove-color;
         font-family: $font-family-roboto;
-        font-weight: 100;
-        opacity: .8;
+        font-weight: $tags-input-font-weight;
       }
     }
   }

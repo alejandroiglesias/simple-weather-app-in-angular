@@ -3,6 +3,6 @@
 //
 
 .topbar {
-  padding: $topbar-padding-y $topbar-padding-x;
+  padding: ($spacer / 4) ($spacer / 2);
   background-color: $topbar-bg;
 }

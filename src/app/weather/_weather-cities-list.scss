@@ -3,6 +3,7 @@
 //
 
 .weather-cities-list {
+  // Add top margin for screens other than the smallest.
   @media screen and (min-width: map-get($grid-breakpoints, 'sm')) {
     margin-top: map-get(map-get($spacers, 3), 'y');
   }

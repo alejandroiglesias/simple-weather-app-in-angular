@@ -49,7 +49,7 @@
   }
 
   .weather-box-temp-description {
-    text-transform: capitalize;
+    @extend .text-capitalize;
   }
 
   .weather-box-misc {
