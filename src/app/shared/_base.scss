@@ -1,0 +1,21 @@
+//
+// Base
+//
+
+// Input placeholders
+::placeholder {
+  color: $placeholder-color;
+}
+
+// Enable box sizing
+* {
+  box-sizing: border-box;
+}
+
+// Base styles for body
+body {
+  color: $body-color;
+  background-color: $body-bg;
+  font-family: $font-family-roboto;
+  font-size: $font-size-root;
+}

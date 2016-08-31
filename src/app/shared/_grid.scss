@@ -1,0 +1,43 @@
+//
+// Grid
+//
+
+// Containers
+.container {
+  @each $breakpoint, $container-max-width in $container-max-widths {
+    @media screen and (min-width: map-get($grid-breakpoints, $breakpoint)) {
+      lost-center: $container-max-width no-flex;
+    }
+  }
+}
+.container-flex {
+  lost-flex-container: column;
+  @each $breakpoint, $container-max-width in $container-max-widths {
+    @media screen and (min-width: map-get($grid-breakpoints, $breakpoint)) {
+      lost-center: $container-max-width;
+    }
+  }
+}
+
+// Column base
+%grid-column {
+  width: 100%;
+}
+
+// Columns
+// We could've other ratios like halves, fifths, etc.
+//.col-half  {}
+//.col-fifth {}
+.col-third {
+  @extend %grid-column;
+  lost-waffle: 1/3
+}
+@each $breakpoint, $width in $grid-breakpoints {
+  .col-#{$breakpoint}-third {
+    @extend %grid-column;
+    lost-flex-container: row;
+    @media screen and (min-width: $width) {
+      lost-waffle: 1/3;
+    }
+  }
+}

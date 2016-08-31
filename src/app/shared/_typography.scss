@@ -1,0 +1,23 @@
+//
+// Typography
+//
+
+strong {
+  font-weight: 500;
+}
+
+small {
+  font-weight: 300;
+}
+
+.lead {
+  font-size: $lead-font-size;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: $text-muted;
+}

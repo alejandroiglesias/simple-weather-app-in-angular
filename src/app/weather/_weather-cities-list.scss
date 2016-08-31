@@ -1,0 +1,9 @@
+//
+// Weather cities list
+//
+
+.weather-cities-list {
+  @media screen and (min-width: map-get($grid-breakpoints, 'sm')) {
+    margin-top: map-get(map-get($spacers, 3), 'y');
+  }
+}

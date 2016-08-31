@@ -1,0 +1,53 @@
+//
+// Tags input
+//
+
+.tags-input {
+  .tags {
+    background-color: $tags-input-bg;
+    border: $tags-input-border;
+    box-shadow: none;
+
+    &.focused {
+      box-shadow: none;
+    }
+
+    .input {
+      background-color: transparent;
+      color: $tags-input-color;
+      font-family: $font-family-roboto;
+      font-size: 12px;
+      font-weight: 100;
+      height: $tag-item-height;
+      margin: 3px;
+    }
+
+    .tag-item {
+      padding: 0 ($spacer / 2);
+      margin: 3px;
+      background: $tag-item-bg;
+      color: $tag-item-color;
+      border: none;
+      font-family: $font-family-roboto;
+      font-size: 12px;
+      font-weight: 100;
+      height: $tag-item-height;
+      line-height: $tag-item-height;
+      box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, .3);
+
+
+      &.selected {
+        background: $tag-item-selected-bg;
+      }
+
+      .remove-button {
+        position: relative;
+        top: -2px;
+        color: $tag-item-remove-color;
+        font-family: $font-family-roboto;
+        font-weight: 100;
+        opacity: .8;
+      }
+    }
+  }
+}

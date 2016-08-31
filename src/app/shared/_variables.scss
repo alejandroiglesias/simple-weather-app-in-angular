@@ -1,0 +1,87 @@
+//
+// Variables
+//
+
+// Colors
+$athens-gray: #dcdee1;
+$casper: #abb1b8;
+$cadet: #566271;
+$gray-lightest: #ebebeb;
+$pale-sky: #646e7b;
+$pastel-red: #ff6767;
+$solitude: #ebeff1;
+$white: #fff;
+
+// Spacing
+$spacer: 1rem;
+$spacer-x: $spacer;
+$spacer-y: $spacer;
+$spacers: (
+  0: (
+    x: 0,
+    y: 0
+  ),
+  1: (
+    x: $spacer-x,
+    y: $spacer-y
+  ),
+  2: (
+    x: ($spacer-x * 1.5),
+    y: ($spacer-y * 1.5)
+  ),
+  3: (
+    x: ($spacer-x * 3),
+    y: ($spacer-y * 3)
+  )
+);
+
+
+// Base
+$body-bg: $solitude;
+$body-color: $cadet;
+$placeholder-color: $athens-gray;
+
+// Typography
+$font-family-roboto: 'Roboto', sans-serif;
+$font-size-root: 16px;
+$lead-font-size: ($font-size-root * 2);
+$small-font-size: 75%;
+$text-muted: $casper;
+
+// Grid
+@lost flexbox flex;
+@lost gutter 16px; // same as 1rem for 16px font size
+$grid-breakpoints: (
+  xs: 0,
+  sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1140px
+);
+
+// Card
+$card-bg: $white;
+
+// Tags input
+$tags-input-bg: rgba(255, 255, 255, .2);
+$tags-input-border: none;
+$tags-input-color: $gray-lightest;
+$tag-item-bg: $tags-input-bg;
+$tag-item-color: $gray-lightest;
+$tag-item-height: 38px;
+$tag-item-remove-color: $athens-gray;
+$tag-item-selected-bg: $pastel-red;
+
+// Topbar
+$topbar-bg: $pale-sky;
+$topbar-padding-x: ($spacer / 2);
+$topbar-padding-y: ($spacer / 4);
+
+// Weather box
+$weather-box-color: $cadet;
