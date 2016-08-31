@@ -1,2 +1,2 @@
 angular
-  .module('app', ['angularMoment', 'ngTagsInput', 'ui.router', 'weather']);
+  .module('app', ['angularMoment', 'ngAnimate', 'ngTagsInput', 'ui.router', 'weather']);
