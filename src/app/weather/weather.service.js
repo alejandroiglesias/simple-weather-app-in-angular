@@ -1,4 +1,4 @@
-class weatherService {
+class WeatherService {
 
   /** @ngInject */
   constructor($http, openWeatherMapAppId) {
@@ -29,4 +29,4 @@ class weatherService {
 
 angular
   .module('weather')
-  .service('weatherService', weatherService);
+  .service('weatherService', WeatherService);
