@@ -1,8 +1,9 @@
 class WeatherService {
 
   /** @ngInject */
-  constructor($http, openWeatherMapAppId) {
+  constructor($http, $q, openWeatherMapAppId) {
     this._$http = $http;
+    this._$q = $q;
 
     this.requestParams = {
       params: {
@@ -22,6 +23,9 @@ class WeatherService {
     return this._$http
       .get('http://api.openweathermap.org/data/2.5/weather', params)
       .then(response => {
+        if (response.data.cod !== '200') {
+          return this._$q.reject('some error occured');
+        }
         return response.data;
       });
   }
